@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>为什么会出现这个页面？ | 参宿四的小木屋</title>
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1672994019387">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="为什么会出现这个页面？ | 参宿四的小木屋 - Atom Feed" href="http://localhost:4000/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="出现这种界面可能是由于以下原因：
+
+服务正在进行停机维护或更新
+由于一些不可避免地原因，我们可能需要进行停机维护或更新，在这期间全部或绝大部分业务将被暂停，具体情况请参见维护公告以获取帮助。
+您的IP近期可能由于安全问题，被安全组策略临时封..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="http://localhost:4000">
+  <img class="avatar" src="http://localhost:4000/images/avatar.png?v=1672994019387" alt="">
+  </a>
+  <h1 class="site-title">
+    参宿四的小木屋
+  </h1>
+  <p class="site-description">
+    啊偶，真不巧，网页走丢了＞﹏＜
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/archives" class="menu">
+          公告
+        </a>
+      
+    
+      
+        <a href="/post/Q" class="menu">
+          为什么会出现这个页面？
+        </a>
+      
+    
+      
+        <a href="/post/A" class="menu">
+          我该如何解决
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              为什么会出现这个页面？
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-01-01
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p><strong>出现这种界面可能是由于以下原因：</strong></p>
+<ul>
+<li><code>服务正在进行停机维护或更新</code><br>
+由于一些不可避免地原因，我们可能需要进行停机维护或更新，在这期间全部或绝大部分业务将被暂停，具体情况请参见维护公告以获取帮助。</li>
+<li><code>您的IP近期可能由于安全问题，被安全组策略临时封禁</code><br>
+如果您能看到该界面，意味着您并没有被完全禁止访问所有端口，这可能是因为您的IP地址的其他用户对本服务器进行了不合理的请求所导致的。</li>
+<li><code>服务器正忙，暂时无法处理您的请求</code><br>
+这可能是由于大量用户请求所导致的服务异常，通常很快就会得到恢复。</li>
+<li><code>服务器正在遭受网络攻击</code><br>
+由于公网环境下网络环境多变，我们的服务器每天都在遭受不同程度的网络攻击，偶尔可能会遭受较为严重的网络攻击，这会触发服务器安全程序的熔断保护措施，导致您的服务中断，我们会尽快为您恢复服务。</li>
+</ul>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  ©2023 参宿四的小木屋   Powered by AlphaOrionisCloud&<a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>|<a href="https://github.com/getgridea/gridea" target="_blank">备案号00000000-0</a>
+  <a class="rss" href="http://localhost:4000/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
