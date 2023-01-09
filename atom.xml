@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:4000</id>
     <title>参宿四的小木屋</title>
-    <updated>2023-01-06T08:33:48.588Z</updated>
+    <updated>2023-01-09T13:11:53.192Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://localhost:4000"/>
     <link rel="self" href="http://localhost:4000/atom.xml"/>
@@ -10,11 +10,4 @@
     <logo>http://localhost:4000/images/avatar.png</logo>
     <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2023, 参宿四的小木屋</rights>
-    <entry>
-        <title type="html"><![CDATA[【公告】服务器维护公告2023-1-6]]></title>
-        <id>http://localhost:4000/post/gong-gao-fu-wu-qi-lin-shi-wei-hu-gong-gao-2023-1-6/</id>
-        <link href="http://localhost:4000/post/gong-gao-fu-wu-qi-lin-shi-wei-hu-gong-gao-2023-1-6/">
-        </link>
-        <updated>2023-01-06T06:29:16.000Z</updated>
-    </entry>
 </feed>
